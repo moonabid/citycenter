@@ -1,83 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Abid Nazir – DevOps Engineer at Google</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Landing Page</title>
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    header {
-      background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Googleplex_HQ_%28cropped%29.jpg');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    header h1 {
-      font-size: 48px;
-      margin: 0;
-    }
-    header p {
-      font-size: 24px;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #3367d6;
-    }
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    a {
-      color: #3367d6;
+    body { margin:0; font-family: Arial, sans-serif; color: #333; }
+    header, section, footer { padding: 60px 20px; text-align: center; }
+    header { background: #f5f7fa; }
+    header h1 { font-size: 2.8rem; margin-bottom: 20px; }
+    header p { font-size: 1.2rem; margin-bottom: 30px; }
+    .btn-primary { background: #007bff; color: #fff; padding: 14px 28px; border:none; border-radius:4px; font-size:1.1rem; cursor:pointer; }
+    .features { display: flex; flex-wrap: wrap; justify-content: center; gap:40px; max-width:1200px; margin:0 auto; }
+    .feature-card { flex: 1 1 300px; background: #fff; padding:30px; border:1px solid #eee; border-radius:8px; text-align:left; }
+    .feature-card h3 { margin-top:0; }
+    .feature-card p { color:#666; }
+    footer { background: #222; color: #ccc; }
+    footer p { margin-bottom:8px; }
+    footer a { color: #007bff; text-decoration: none; }
+    @media (max-width:768px){
+      header h1 { font-size:2.2rem; }
+      .features { gap:20px; }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Hi, I'm Abid Nazir</h1>
-  <p>DevOps Engineer at Google – Cloud Automation Expert</p>
-</header>
+  <!-- Hero Section -->
+  <header>
+    <h1>Welcome to the Future of Connectivity</h1>
+    <p>Experience faster, smarter, and more reliable internet services tailored for modern life.</p>
+    <button class="btn-primary">Get Started</button>
+  </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>I’m a passionate DevOps Engineer with 3+ years of experience working on cloud infrastructure, CI/CD pipelines, and microservice deployments. I’m currently working at Google on cutting-edge infrastructure using tools like Kubernetes, Terraform, and Jenkins.</p>
-  
-  <h2>My Tools</h2>
-  <ul>
-    <li>Cloud: AWS, GCP</li>
-    <li>CI/CD: Jenkins, GitHub Actions</li>
-    <li>IaC: Terraform, Ansible</li>
-    <li>Containers: Docker, Kubernetes</li>
-    <li>Monitoring: Prometheus, Grafana</li>
-  </ul>
-  
-  <h2>Google Office</h2>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Googleplex_HQ_%28cropped%29.jpg" alt="Googleplex" width="100%" />
-  <br><br>
-  <img src="https://cdn.vox-cdn.com/thumbor/MLoCbpLz-MImOmJYpiM9YMHJZaA=/0x0:2040x1360/1200x800/filters:focal(857x482:1183x808)/cdn.vox-cdn.com/uploads/chorus_image/image/70019155/acastro_180427_1777_0002.0.jpg" alt="Google Office Inside" width="100%" />
-</section>
+  <!-- Features Section -->
+  <section>
+    <h2>Our Core Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <h3>Blazing Fast Speeds</h3>
+        <p>Enjoy lightning-quick downloads and seamless streaming with our optimized network.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Rock‑Solid Reliability</h3>
+        <p>Our infrastructure is built to stay online when it matters most—day in, day out.</p>
+      </div>
+      <div class="feature-card">
+        <h3>24/7 Support</h3>
+        <p>Need help? Our expert team is ready to assist you around the clock.</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>Contact: <a href="mailto:moonabid786@gmail.com">moonabid786@gmail.com</a> | Birmingham, UK</p>
-</footer>
+  <!-- Call-To-Action Section -->
+  <section style="background:#f0f4f8;">
+    <h2>Ready to Upgrade?</h2>
+    <p>Sign up today and take your connectivity to the next level.</p>
+    <button class="btn-primary">Join Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Your Company Name</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  </footer>
 
 </body>
 </html>
